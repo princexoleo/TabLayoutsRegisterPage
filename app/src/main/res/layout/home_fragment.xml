@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/textView_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="4dp">
+
+
+        <ImageView
+            android:id="@+id/user_imageView_id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_home_black_24dp"
+            android:contentDescription="This is an description of image "/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/userName_tv_id"
+            android:layout_toEndOf="@+id/user_imageView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leon"/>
+        <TextView
+            android:id="@+id/userPhone_tv_id"
+
+            android:layout_toEndOf="@id/user_imageView_id"
+            android:layout_below="@id/userName_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01911687821"/>
+        <TextView
+            android:id="@+id/userCity_tv_id"
+
+            android:layout_toEndOf="@id/user_imageView_id"
+            android:layout_below="@id/userPhone_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dhaka"/>
+
+        <TextView
+            android:id="@+id/userCountry_tv_id"
+
+            android:layout_toEndOf="@id/user_imageView_id"
+            android:layout_below="@id/userCity_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangladesh"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
